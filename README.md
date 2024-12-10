@@ -2,7 +2,7 @@
 <ul>
 <li class="rainbow-text">Mình tên là Nguyễn Ngọc Thịnh,</li> hiện đang theo học tại ngôi trường THPT CHuyên Bến Tre, mình rất hân hạnh được giới với tất cả mọi người về bản thân mình</li>
 </ul>
-       <script>
+<script>
         // JavaScript để tạo hiệu ứng chuyển màu cầu vồng
         const rainbowText = document.querySelectorAll('.rainbow-text');
 
