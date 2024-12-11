@@ -1,4 +1,14 @@
-<div style="background-color: orange;">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile các bạn nhóm 5</title>
+    <style>
+        body {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
     <h2>Profile các bạn nhóm 5</h2>
     <ul>
         <li class="rainbow-text">Mình tên là Nguyễn Ngọc Thịnh,</li> hiện đang theo học tại ngôi trường THPT CHuyên Bến Tre, mình rất hân hạnh được giới với tất cả mọi người về bản thân mình</li>
@@ -35,6 +45,6 @@
             <li>Nguyện vọng 1 là Đại học Bách Khoa</li>
         </ol>
     </li>
-</div>
-
+</body>
+</html>
 
