@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
@@ -204,36 +204,9 @@
   </div>
 
 </body>
-</html>
 
 
-<html>
-<head>
-    <title>Profile các bạn nhóm 5</title>
-    <style>
-        body {
-            background-color: orange;
-        }
-    </style>
-</head>
-<body>
-  
-    <script>
-        // JavaScript để tạo hiệu ứng chuyển màu cầu vồng
-        const rainbowText = document.querySelectorAll('.rainbow-text');
 
-        rainbowText.forEach(text => {
-            let hue = 0;
-            const interval = setInterval(() => {
-                hue++;
-                if (hue >= 360) {
-                    hue = 0;
-                }
-                text.style.color = `hsl(${hue}, 100%, 50%)`;
-            }, 20);
-        });
-    </script>
-    <image src="1.jpg">
 
     
    
