@@ -4,75 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trang Web Của Tôi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #008001; /* Màu hồng nhạt */
-      font-family: 'Arial', sans-serif;
+      font-family: 'Lora', serif;
       margin: 0;
       padding: 0;
+      background: linear-gradient(to bottom, #f8d7d7, #ffe6e6);
+      overflow-x: hidden;
     }
 
-    /* Pano đầu trang */
     .header {
-      background-color: #000000; /* Màu đen */
+      background: linear-gradient(90deg, #ff4e50, #f9d423);
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px;
+      position: relative;
     }
 
-    /* Chữ với hiệu ứng bay lơ lửng */
-    .floating-text {
+    .header h1 {
       font-size: 36px;
       font-weight: bold;
-      background-image: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
-      background-size: 200% 200%;
-      color: transparent;
-      background-clip: text;
-      display: inline-block;
-      animation: rainbow 3s linear infinite, float 2s ease-in-out infinite;
+      margin: 0;
+      animation: glow 2s infinite alternate;
     }
 
-    /* Hiệu ứng chữ 7 màu chuyển động */
-    @keyframes rainbow {
-      0% { background-position: 0% 50%; }
-      100% { background-position: 100% 50%; }
-    }
-
-    /* Hiệu ứng bay lơ lửng */
-    @keyframes float {
+    @keyframes glow {
       0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
+        text-shadow: 0 0 10px #ff4e50, 0 0 20px #ff4e50, 0 0 30px #f9d423, 0 0 40px #f9d423;
       }
       100% {
-        transform: translateY(0);
+        text-shadow: 0 0 20px #ff4e50, 0 0 30px #f9d423, 0 0 40px #f9d423, 0 0 50px #ff4e50;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="header">
-    <h1 class="floating-text">NGUYỄN NGỌC THỊNH XIN CHÀO</h1>
-  </div>
-</body>
-
-
-
-
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang Web Của Tôi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> <!-- Thêm link font Lora -->
-  <style>
-    body {
-      font-family: 'Lora', serif; /* Sử dụng font Lora */
-      margin: 0;
-      padding: 0;
-      background-color: #f8d7d7; /* Màu nền nhẹ */
     }
 
     .container {
@@ -82,13 +45,22 @@
       margin: 20px;
     }
 
-    /* Dòng giới thiệu khái quát bản thân */
     .intro {
       font-size: 24px;
-      color: #003366; /* Màu xanh dương đậm */
+      color: #003366;
       font-weight: normal;
       text-align: center;
       margin-bottom: 40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
     }
 
     .section {
@@ -98,89 +70,103 @@
       width: 100%;
       margin-bottom: 40px;
       flex-wrap: wrap;
+      animation: slideIn 2s ease-in-out;
     }
 
-    /* Nội dung chính đầu tiên */
-    .first-section {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
     }
 
-    .first-section .image {
-      flex: 1;
-      text-align: center;
-    }
-
-    .first-section .text-container {
-      flex: 1;
-      text-align: left;
-    }
-
-    .first-section .title {
-      font-size: 28px;
-      font-weight: bold;
-      color: red;
-      text-align: left;
-    }
-
-    .first-section .text {
-      font-size: 20px;
-      font-weight: normal;
-      color: #003366; /* Màu xanh dương đậm */
-    }
-
-    /* Nội dung chính thứ 2 */
-    .second-section {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 100%;
-    }
-
-    .second-section .image {
-      flex: 1;
-      text-align: center;
-    }
-
-    .second-section .text-container {
-      flex: 1;
-      text-align: right;
-    }
-
-    .second-section .title {
-      font-size: 28px;
-      font-weight: bold;
-      color: red;
-      text-align: right;
-    }
-
-    .second-section .text {
-      font-size: 20px;
-      font-weight: normal;
-      color: #003366; /* Màu xanh dương đậm */
-    }
-
-    /* Căn chỉnh ảnh */
-    .image img {
+    .section .image img {
       width: 80%;
       height: auto;
-      border-radius: 8px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
     }
 
+    .section .image img:hover {
+      transform: scale(1.1);
+    }
+
+    .section .text-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .text-container .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d9534f;
+      margin-bottom: 10px;
+    }
+
+    .text-container .text {
+      font-size: 20px;
+      color: #003366;
+      line-height: 1.6;
+    }
+
+    .floating-icons {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .floating-icons a {
+      width: 50px;
+      height: 50px;
+      background-color: #ff4e50;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .floating-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    .floating-icons a img {
+      width: 60%;
+      height: auto;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003366;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 18px;
+    }
   </style>
 </head>
 <body>
+  <div class="header">
+    <h1>NGUYỄN NGỌC THỊNH XIN CHÀO</h1>
+  </div>
 
   <div class="container">
-    <!-- Dòng giới thiệu khái quát bản thân -->
     <div class="intro">
-      Mình tên là Nguyễn Ngọc Thịnh hiện đang theo học tại ngôi trường THPT CHuyên Bến Tre, mình rất hân hạnh được giới với tất cả mọi người về bản thân mình
+      Mình tên là Nguyễn Ngọc Thịnh hiện đang theo học tại ngôi trường THPT Chuyên Bến Tre, mình rất hân hạnh được giới thiệu bản thân mình.
     </div>
 
-    <!-- Nội dung chính đầu tiên -->
-    <div class="section first-section">
+    <div class="section">
       <div class="image">
         <img src="462578825_1082412466900930_547812731579927046_n.jpg" alt="Ảnh 1">
       </div>
@@ -190,20 +176,28 @@
       </div>
     </div>
 
-    <!-- Nội dung chính thứ 2 -->
-    <div class="section second-section">
+    <div class="section">
       <div class="text-container">
         <div class="title">Nguyện vọng tương lai</div>
-        <div class="text">Mình chọn thi khối Khoa học tự nhiên, nguyện vọng 1 là ngành Vi mạch bán dẫn trường đại học Bách Khoa</div>
+        <div class="text">Mình chọn thi khối Khoa học tự nhiên, nguyện vọng 1 là ngành Vi mạch bán dẫn trường đại học Bách Khoa.</div>
       </div>
       <div class="image">
         <img src="1.jpg" alt="Ảnh 2">
       </div>
     </div>
-
   </div>
 
+  <div class="floating-icons">
+    <a href="#"><img src="https://img.icons8.com/color/48/facebook-circled--v1.png" alt="Facebook"></a>
+    <a href="#"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram"></a>
+    <a href="#"><img src="https://img.icons8.com/color/48/youtube-play--v1.png" alt="YouTube"></a>
+  </div>
 
+  <div class="footer">
+    <p>&copy; 2025 Nguyễn Ngọc Thịnh - Tất cả các quyền được bảo lưu.</p>
+  </div>
+</body>
+</html>
 
 
 
