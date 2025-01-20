@@ -293,7 +293,7 @@
         <div class="hobby-description">Thỏa sức sáng tạo với chiến thuật và đội hình độc đáo.</div>
       </div>
       <div class="hobby">
-        <img src="ngngphvy.jpg" alt="Ngắm các nàng thơ">
+        <img src="mập.jpg" alt="Ngắm các nàng thơ và chọc thằng mậpmập">
         <div class="hobby-title">Ngắm các nàng thơ</div>
         <div class="hobby-description">Khoảnh khắc dịu dàng và cảm hứng cho cuộc sống.</div>
       </div>
