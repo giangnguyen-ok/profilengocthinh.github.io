@@ -283,7 +283,7 @@
         <div class="hobby-description">Niềm đam mê từ nhỏ, luôn mang lại sự hào hứng.</div>
       </div>
       <div class="hobby">
-        <img src="https://img.icons8.com/color/256/chess.png" alt="Đánh cờ vua">
+        <img src="[https://img.icons8.com/color/256/chess.pn](https://www.bing.com/images/search?view=detailV2&ccid=8iefHUvS&id=48B5CB1D6F937BF30F98A0B95E6D0E4FF0A2F6FC&thid=OIP.8iefHUvSN_QC-HhUbQcTMAHaHa&mediaurl=https%3a%2f%2fbetacssjs.chesscomfiles.com%2fbundles%2fweb%2fimages%2fsocial%2fshare-logo.c97604b3.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.f2279f1d4bd237f402f878546d071330%3frik%3d%252fPai8E8ObV65oA%26pid%3dImgRaw%26r%3d0&exph=1200&expw=1200&q=chess.com++&simid=607999638731325429&FORM=IRPRST&ck=31C7241D35EA1A0AB37837BCE0A98BB5&selectedIndex=0&itb=0)g" alt="Đánh cờ vua">
         <div class="hobby-title">Đánh cờ vua</div>
         <div class="hobby-description">Trò chơi trí tuệ tôi yêu thích để rèn luyện tư duy.</div>
       </div>
