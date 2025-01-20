@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
@@ -26,7 +26,11 @@
       font-size: 36px;
       font-weight: bold;
       margin: 0;
-      animation: glow 2s infinite alternate;
+      animation: glow 2s infinite alternate, rainbow-text 3s linear infinite;
+      background-image: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     @keyframes glow {
@@ -36,6 +40,11 @@
       100% {
         text-shadow: 0 0 20px #ff4e50, 0 0 30px #f9d423, 0 0 40px #f9d423, 0 0 50px #ff4e50;
       }
+    }
+
+    @keyframes rainbow-text {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
     }
 
     .container {
@@ -104,6 +113,11 @@
       font-weight: bold;
       color: #d9534f;
       margin-bottom: 10px;
+      background-image: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: rainbow-text 3s linear infinite;
     }
 
     .text-container .text {
@@ -154,6 +168,71 @@
       margin: 0;
       font-size: 18px;
     }
+
+    .hobbies {
+      margin: 40px;
+      text-align: center;
+      animation: slideUp 2s ease-in-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .hobbies .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ff4e50;
+      background-image: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: rainbow-text 3s linear infinite;
+    }
+
+    .hobbies-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .hobby {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .hobby:hover {
+      transform: scale(1.1);
+    }
+
+    .hobby img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .hobby .hobby-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #003366;
+      margin-top: 10px;
+    }
+
+    .hobby .hobby-description {
+      font-size: 18px;
+      color: #666;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
@@ -187,6 +266,37 @@
     </div>
   </div>
 
+  <div class="hobbies">
+    <div class="title">Sở thích của tôi</div>
+    <div class="hobbies-list">
+      <div class="hobby">
+        <img src="https://img.icons8.com/color/256/badminton.png" alt="Đánh cầu lông">
+        <div class="hobby-title">Đánh cầu lông</div>
+        <div class="hobby-description">Môn thể thao giúp tôi rèn luyện sức khỏe và tinh thần đồng đội.</div>
+      </div>
+      <div class="hobby">
+        <img src="https://img.icons8.com/color/256/soccer-ball.png" alt="Đá bóng">
+        <div class="hobby-title">Đá bóng</div>
+        <div class="hobby-description">Niềm đam mê từ nhỏ, luôn mang lại sự hào hứng.</div>
+      </div>
+      <div class="hobby">
+        <img src="https://img.icons8.com/color/256/chess.png" alt="Đánh cờ vua">
+        <div class="hobby-title">Đánh cờ vua</div>
+        <div class="hobby-description">Trò chơi trí tuệ tôi yêu thích để rèn luyện tư duy.</div>
+      </div>
+      <div class="hobby">
+        <img src="https://img.icons8.com/color/256/league-of-legends.png" alt="Đấu Trường Chân Lý">
+        <div class="hobby-title">Đấu Trường Chân Lý</div>
+        <div class="hobby-description">Thỏa sức sáng tạo với chiến thuật và đội hình độc đáo.</div>
+      </div>
+      <div class="hobby">
+        <img src="https://img.icons8.com/color/256/love-letter.png" alt="Ngắm các nàng thơ">
+        <div class="hobby-title">Ngắm các nàng thơ</div>
+        <div class="hobby-description">Khoảnh khắc dịu dàng và cảm hứng cho cuộc sống.</div>
+      </div>
+    </div>
+  </div>
+
   <div class="floating-icons">
     <a href="#"><img src="https://img.icons8.com/color/48/facebook-circled--v1.png" alt="Facebook"></a>
     <a href="#"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram"></a>
@@ -198,11 +308,3 @@
   </div>
 </body>
 </html>
-
-
-
-    
-   
-</body>
-</html>
-
