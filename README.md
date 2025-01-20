@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +6,9 @@
   <title>Trang Web Của Tôi</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    h1 {
+            display: none;
+            }
     body {
       font-family: 'Lora', serif;
       margin: 0;
